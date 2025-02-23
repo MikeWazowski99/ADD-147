@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment 01</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/script.js"></script>
+    <script>
+        function myFunction2(){
+            document.getElementById('text').innerHTML="Text is being change from the head script"
+        }
+    </script>
+</head>
+<body>
+    <header>
+    <h1>Welcome to my First Assessment using JavaScript</h1>
+    </header>
+    <main>
+        
+        <div class="buttons">
+            <p id="text" class="center">This is a test to see how everything looks</p>
+            <button onclick="myFunction()">External Text Change</button>
+            <button onclick="myFunction2()">Head Text Change</button>
+    <button onclick="getElementById('text').style.color='red'">Click to change text color</button>
+        </div>
+        <script>
+            document.getElementById('text').innerHTML="This text is being loaded in from the body"
+        </script>
+
+        <img src="images/Cat.jpg" alt="Cat" id="pet" class="center" height="450px">
+        <div class="buttons">
+            <button onclick="document.getElementById('pet').src='images/Cat.jpg'">Cat 1</button>
+            <button onclick="document.getElementById('pet').src='images/Cat2.jpg'">Cat 2</button>
+            <button onclick="document.getElementById('pet').src='images/Cat3.jpg'">Cat 3</button>
+        </div>
+        <div class="buttons">
+            <h3>CSS Changes</h3>
+            <button onclick="getElementById('pet').style.display='block'">Show Image!</button>
+            <button onclick="getElementById('pet').style.width='1200px'">Press to change width of image</button>
+            <button onclick="getElementById('pet').style.display='none'">Hide Image</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;2025 Michael Tapia</p>
+    </footer>
+</body>
+</html>
