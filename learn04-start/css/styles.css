@@ -1,0 +1,284 @@
+/* --------------------- CSS Reset -------------------- */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul,
+dl {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*  ---------------------- Variables ---------------------- */
+
+:root {
+    --primary: #512da8;
+    --primary-light: #8559da;
+    --primary-dark: #140078;
+    --secondary: #ffc107;
+    --secondary-light: #fff350;
+    --secondary-dark: #c79100;
+    --text-light: #ffffff;
+    --text-dark: #000000;
+}
+
+
+/* ---------------------- layout ------------------------- */
+
+body {
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 1.2em;
+    color: var(--text-dark);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    min-width: 500px;
+    margin: 20px auto;
+    overflow: auto;
+}
+
+footer,
+main,
+aside,
+article,
+div {
+    clear: both;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--primary);
+    color: var(--text-light);
+}
+
+.left {
+    clear: both;
+    float: left;
+    padding: 20px;
+}
+
+.right {
+    clear: both;
+    float: right;
+    padding: 20px;
+}
+
+.center {
+    clear: both;
+    display: block;
+    margin: 10px auto;
+}
+
+img {
+    box-sizing: border-box;
+    width: 40%;
+    margin: 20px auto;
+}
+
+header {
+    background: var(--primary);
+    color: var(--text-light);
+    min-height: 80px;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+
+h2 {
+    color: var(--primary);
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    text-align: center;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.buttons {
+    width: 30%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+button {
+    color: var(--text-light);
+    border: 2px solid var(--primary-dark);
+    background: var(--primary-dark);
+    text-decoration: none;
+}
+
+button:hover {
+    color: var(--primary-dark);
+    background: var(--secondary-light);
+}
+
+p {
+    padding: 10px;
+}
+
+.room {
+    width: 30%;
+    margin: 10px 1%;
+    border: 1px solid var(--primary-dark);
+    padding: 25px;
+}
+
+#room2,
+#room3 {
+    display: none;
+}
+
+.top,
+.bottom {
+    margin: 25px 30px;
+    text-align: center;
+}

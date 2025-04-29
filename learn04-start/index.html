@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using JavaScript With Forms</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/calculate.js"></script>
+</head>
+
+<body onload="addDate()">
+
+    <header>
+        <h1>JavaScript and Forms</h1>
+    </header>
+    <main class="container">
+        <form>
+            <div class="top">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="fname"><br>
+                <p id="today"></p>
+                <p>&nbsp;</p>
+
+                <label for="rooms">How Many Rooms:</label>
+                <select id="rooms" name="rooms" onclick="showScreens()">
+            <option value="1">one</option>
+            <option value="2">two</option>
+            <option value="3">three</option>
+            </select>
+            </div>
+
+            <div class="room" id="room1">
+                <h3>Room 1</h3>
+                <label for="rm1Length">Room one length:</label>
+                <input type="text" id="rm1length" width: 20 /> <br/>
+                <label for="rm1width">Room one width:</label>
+                <input type="text" id="rm1width" /> <br/>
+                <label for="rm1height">Room one height:</label>
+                <input type="text" id="rm1height" /> <br/>
+                <label for="rm1cost">Room one cost:</label>
+                <input type="text" id="rm1cost" /> <br/>
+            </div>
+
+            <div class="room" id="room2">
+                <h3>Room 2</h3>
+                <label for="rm1Length">Room one length:</label>
+                <input type="text" id="rm2length" /> <br/>
+                <label for="rm1width">Room one width:</label>
+                <input type="text" id="rm2width" /> <br/>
+                <label for="rm1height">Room one height:</label>
+                <input type="text" id="rm2height" /> <br/>
+                <label for="rm1cost">Room one cost:</label>
+                <input type="text" id="rm2cost" /> <br/>
+            </div>
+
+            <div class="room" id="room3">
+                <h3>Room 3</h3>
+                <label for="rm3Length">Room one length:</label>
+                <input type="text" id="rm3length" /> <br/>
+                <label for="rm1width">Room one width:</label>
+                <input type="text" id="rm3width" /> <br/>
+                <label for="rm1height">Room one height:</label>
+                <input type="text" id="rm3height" /> <br/>
+                <label for="rm1cost">Room one cost:</label>
+                <input type="text" id="rm3cost" /> <br/>
+
+            </div>
+
+            <div class="bottom">
+                <button type="button" onclick="estimate()">Get Estimate!</button>
+                <h3>Estimate:</h3>
+                <p id="estimate"></p>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
