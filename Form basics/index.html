@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/scripts.js"></script>
+</head>
+
+<body onload="addDate()">
+
+    <header>
+        <h1>Food Order Form</h1>
+    </header>
+
+    <main class="container">
+        <form id="orderForm">
+
+            <div class="top">
+                <label for="customerName">Name:</label>
+                <input type="text" id="customerName" name="customerName"><br>
+                <p id="today"></p>
+                <p>&nbsp;</p>
+            </div>
+
+            <div class="section" id="drinks">
+                <h2>Drinks</h2>
+                <label for="drink_coke">Coke:</label>
+                <input type="number" id="drink_coke" value="0" min="0"><br/>
+                <label for="drink_pepsi">Pepsi:</label>
+                <input type="number" id="drink_pepsi" value="0" min="0"><br/>
+                <label for="drink_sprite">Sprite:</label>
+                <input type="number" id="drink_sprite" value="0" min="0"><br/>
+                <label for="drink_water">Water:</label>
+                <input type="number" id="drink_water" value="0" min="0"><br/>
+                <label for="drink_lemonade">Lemonade:</label>
+                <input type="number" id="drink_lemonade" value="0" min="0"><br/>
+            </div>
+
+            <div class="section" id="sandwiches">
+                <h2>Sandwiches</h2>
+                <label for="sandwich_hamburger">Hamburger:</label>
+                <input type="number" id="sandwich_hamburger" value="0" min="0"><br/>
+                <label for="sandwich_cheeseburger">Cheeseburger:</label>
+                <input type="number" id="sandwich_cheeseburger" value="0" min="0"><br/>
+                <label for="sandwich_chicken">Chicken Sandwich:</label>
+                <input type="number" id="sandwich_chicken" value="0" min="0"><br/>
+                <label for="sandwich_veggie">Veggie Burger:</label>
+                <input type="number" id="sandwich_veggie" value="0" min="0"><br/>
+                <label for="sandwich_fish">BLT Sandwich:</label>
+                <input type="number" id="sandwich_fish" value="0" min="0"><br/>
+            </div>
+
+            <div class="section" id="sides">
+                <h2>Desserts & Sides</h2>
+                <label for="side_fries">Fries:</label>
+                <input type="number" id="side_fries" value="0" min="0"><br/>
+                <label for="side_onionrings">Onion Rings:</label>
+                <input type="number" id="side_onionrings" value="0" min="0"><br/>
+                <label for="side_icecream">Ice Cream:</label>
+                <input type="number" id="side_icecream" value="0" min="0"><br/>
+                <label for="side_cookie">Cookie:</label>
+                <input type="number" id="side_cookie" value="0" min="0"><br/>
+                <label for="side_brownie">Brownie:</label>
+                <input type="number" id="side_brownie" value="0" min="0"><br/>
+            </div>
+
+            <div class="bottom">
+                <button type="button" onclick="generateSummary()">Submit Order</button>
+                <h3>Order Summary:</h3>
+                <p id="summary"></p>
+            </div>
+
+        </form>
+    </main>
+
+</body>
+
+</html>
