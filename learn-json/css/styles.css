@@ -1,0 +1,205 @@
+/*             CSS Reset                    */
+
+/* 
+   http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+
+/*                   Colors
+primary: #2e7d32;
+secondary: #fdd835;
+primary-light: #60ad5e;
+primary-dark: #005005;
+secondary-light: #ffff6b;
+secondary-dark: #c6a700;
+dark-text: #000000;
+light-text: #0000000;
+*/
+
+
+
+/*                    Fonts 
+
+heading font:
+font-family: 'IBM Plex Serif', serif;
+
+body font:
+
+font-family: 'Lexend Exa', sans-serif;
+
+
+*/
+
+
+/*                     Text                   */
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'IBM Plex Serif', serif;
+    color: #2e7d32;
+    line-height: 2;
+}
+
+h1{
+    text-align: center;
+    font-weight:900;
+    font-size:3.5em;
+}
+
+h2{
+    font-weight:700;
+    font-size:3em;
+}
+
+h3{
+    font-weight:500;
+    font-size:2.5em;
+}
+
+h4{
+    font-weight:300;
+    font-size:2em;
+}
+
+h5{
+    font-size: 1.5em;
+    font-style:italic;
+}
+
+h6{
+    font-style: oblique;
+
+}
+
+p{
+	font-family: 'Lexend Exa', sans-serif;
+	line-height: 1.5;
+	font-size: 1.5em;
+	
+}
+/*                     page elements           */
+
+nav{
+	text-align: center;
+	padding: 30px; 
+	line-height: 3;
+}
+
+nav a{
+	text-decoration: none;
+	border: 3px solid #005005;
+	border-radius: 20px;
+	padding: 10px 30px;
+	margin-left: 40px;
+	color: #ffffff;
+	background-color:#005005;
+	font-family: 'Lexend Exa', sans-serif;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+
+
+/*                    layout                     */
+
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 15px auto;
+	background: white;
+}
+
+img{
+    display: block;
+    margin: 30px auto;
+}
+
+figcaption{
+    text-align: center;
+    color: #005005;
+    font-style: italic;
+}
+
+main{
+  
+	min-height: 600px;
+	margin-bottom: 20px;
+}
+
+body{
+	background: rgb(12, 43, 12);
+}
+
+/*aside{
+    float:right;
+    border: 2px solid #005005;
+	width: 24%;
+	padding: 10px;
+	box-sizing: border-box;
+	min-height: 600px;
+	margin-top: 65px;
+}*/
+
+aside h1, aside h2{
+	text-align: center;
+}
+
+footer{
+	clear: both;
+	width: 100%;
+	text-align: center; 
+	margin-top: 15px;
+	border-top: 3px solid #005005;
+	padding: 20px;
+}

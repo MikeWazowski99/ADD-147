@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON - Create JSON</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lexend+Exa:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="container">
+        <h1>Create a JSON file</h1>
+
+    </header>
+
+    <main class="container">
+
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="First Name"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Last Name"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email" placeholder="email"><br>
+            <label for="phone">Phone:</label><br>
+            <input type="text" id="phone" name="phone" placeholder="phone"><br><br>
+            <button type="button" onclick="addme()">Add Contact</button>
+
+        </form>
+
+        <p id="json-value"></p>
+
+    </main>
+
+    <script src="scripts/create.js"></script>
+</body>
+
+</html>
